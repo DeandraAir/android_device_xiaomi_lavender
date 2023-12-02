@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/serasa_lavender.mk
+    $(LOCAL_DIR)/droidx_lavender.mk
 
 COMMON_LUNCH_CHOICES := \
-    serasa_lavender-user \
-    serasa_lavender-userdebug \
-    serasa_lavender-eng
+    droidx_lavender-user \
+    droidx_lavender-userdebug \
+    droidx_lavender-eng
