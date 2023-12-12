@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/droidx_lavender.mk
+    $(LOCAL_DIR)/aosp_lavender.mk
 
 COMMON_LUNCH_CHOICES := \
-    droidx_lavender-user \
-    droidx_lavender-userdebug \
-    droidx_lavender-eng
+    aosp_lavender-user \
+    aosp_lavender-userdebug \
+    aosp_lavender-eng
