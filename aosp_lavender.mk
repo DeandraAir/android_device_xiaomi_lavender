@@ -8,8 +8,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common DroidX-UI stuff
-$(call inherit-product, vendor/droidx/config/common_full_phone.mk)
+# Inherit some common CraftRom-OS stuff
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit from lavender device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -19,14 +19,15 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_INCLUDE_PIXEL_CHARGER := true
-TARGET_USE_MOTO_CALCULATOR := true
-DROIDX_GAPPS := true
+
+# CraftRom specific flags
+CUSTOM_MAINTAINER  := Deandra_Aditya
 
 # Device Identifier. This must come after all inclusions.
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := lavender
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := droidx_lavender
+PRODUCT_NAME := aosp_lavender
 PRODUCT_MODEL := Redmi Note 7
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
